@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/sys"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/sys"/>
+    <item
+        android:id="@+id/file"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/file"/>
+    <item
+        android:id="@+id/product"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/product"/>
+
+</menu>

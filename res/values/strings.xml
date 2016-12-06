@@ -1,0 +1,23 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">MDF3Daydream</string>
+    <string name="activity_name">Dreamservice Example</string>
+    <string name="activity_instructions">Instructions</string>
+    <string name="pref_category_animations">Animations</string>
+    <string name="pref_list_title1">Rotate Cogwheels</string>
+    <string name="pref_list_summary1">Choose direction to rotate cogwheels</string>
+    <string name="daydream_string">For Daydream Service, go to Settings >> Display >> Daydream.</string>
+    
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="sys">系统管理</string>
+    <string name="file">文件管理</string>
+    <string name="product">产品管理</string>
+    
+    <!-- ============================ -->
+    <!--  AppWidget examples strings     -->
+    <!-- ============================ -->
+
+    <string name="appwidget_configure_instructions">This text will be shown before the date in our example widget.</string>
+    <string name="appwidget_prefix_default">Oh hai</string>
+    <string name="appwidget_text_format"><xliff:g id="prefix">%1$s</xliff:g>: <xliff:g id="time">%2$s</xliff:g></string>
+</resources>

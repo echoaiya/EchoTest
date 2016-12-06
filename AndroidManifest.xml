@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.test" >
+
+    <uses-sdk
+        android:minSdkVersion="20"
+        android:targetSdkVersion="23" />
+
+    <application android:name=".MyApplication2"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/activity_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.test.MainActivity"
+            android:label="@string/activity_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ************************************* -->
+        <!--      APPWIDGET PACKAGE SAMPLES           -->
+        <!-- ************************************* -->
+
+        <receiver android:name="com.example.android.apis.appwidget.ExampleAppWidgetProvider" android:icon="@drawable/gear2">
+            <meta-data android:name="android.appwidget.provider"
+                    android:resource="@xml/appwidget_provider" />
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.example.android.apis.appwidget.ExampleAppWidgetConfigure">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.example.android.apis.appwidget.ExampleBroadcastReceiver" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.ACTION_TIMEZONE_CHANGED" />
+                <action android:name="android.intent.ACTION_TIME" />
+            </intent-filter>
+        </receiver>
+        
+        <service android:name="widget.UpdateWidgetService"></service>
+        
+        
+        <service android:name=".service.Service1" android:process=":process1"/>
+        <receiver android:name=".service.Receiver1" android:process=":process1"/>
+        <service android:name=".service.Service2" android:process=":process2"/>
+        <receiver android:name=".service.Receiver2" android:process=":process2"/>
+    </application>
+
+</manifest>
