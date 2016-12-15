@@ -44,6 +44,7 @@ public class ExampleBroadcastReceiver extends BroadcastReceiver {
             ArrayList<Integer> appWidgetIds = new ArrayList<Integer>();
             ArrayList<String> texts = new ArrayList<String>();
 
+	//This is a test
             ExampleAppWidgetConfigure.loadAllTitlePrefs(context, appWidgetIds, texts);
 
             final int N = appWidgetIds.size();
