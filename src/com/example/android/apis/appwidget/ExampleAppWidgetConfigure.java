@@ -36,6 +36,8 @@ import com.example.test.R;
  * The configuration screen for the ExampleAppWidgetProvider widget sample.
  */
 public class ExampleAppWidgetConfigure extends Activity {
+    privat static final String tag = "tag";
+    
     static final String TAG = "ExampleAppWidgetConfigure";
 
     private static final String PREFS_NAME
